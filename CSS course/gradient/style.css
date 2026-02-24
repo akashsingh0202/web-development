@@ -1,0 +1,35 @@
+.box{
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    /* background-image: linear-gradient(pink, aqua); */
+     /* background-image: linear-gradient(to right,pink, aqua); */
+     /* background-image: linear-gradient(to left , pink, aqua);
+      background-image: linear-gradient(to bottom,pink, aqua);
+       background-image: linear-gradient(to top,pink, aqua); */
+    background-image: linear-gradient(to bottom right,pink, aqua);
+    background-image: linear-gradient(to top right,pink, aqua,black);
+}
+.box2{
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 15px;
+    background-image: radial-gradient(pink,aqua,black);
+    background-image: radial-gradient(circle,pink,aqua,black);
+}
+.box3{
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 15px;
+    background-image: radial-gradient(pink 10%,aqua 60%,rgb(21, 59, 59)
+    30%);
+}
+.box4{
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 15px;
+    background-image:conic-gradient(red, yellow, green);;
+}
