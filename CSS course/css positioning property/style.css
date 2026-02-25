@@ -1,0 +1,40 @@
+/* .box{
+    border: 1px solid black;
+    position: relative;
+    position: absolute;
+    position: static;
+    position: fixed;
+    position: sticky;
+} */
+ div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+
+ }
+ #box3{
+   position: relative;
+   
+   top: 120px;
+
+ }
+ .divi{
+    height: 1000px;
+    width: 100vw;
+    background-color: yellow;
+ }
+#box1{
+    position: fixed;
+}
+#box4{
+    top: 200px;
+    left: 50px;
+    position: absolute;
+}
+#box2{
+    position: sticky;
+    left: 500px;
+    top: 0px;
+}
