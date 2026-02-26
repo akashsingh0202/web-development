@@ -1,0 +1,36 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.wrapper{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:black;
+  perspective:1000px;
+}
+
+.scene{
+  transform-style:preserve-3d;
+}
+
+.card{
+  width:300px;
+  height:200px;
+  border: 1px solid black;
+  background:linear-gradient(45deg,red,orange);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2rem;
+  color:white;
+  transition:0.6s;
+  
+}
+
+.wrapper:hover .card{
+  transform: rotateX(30deg) rotateX(15deg) translateZ(50px) scale(3) ;
+}
