@@ -1,3 +1,1 @@
-
-var a=20;
-document.writeln(a);
+console.log("Akash")
