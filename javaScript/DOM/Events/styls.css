@@ -1,0 +1,15 @@
+.A{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    color: white;
+
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
