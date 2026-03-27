@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Move Box</title>
+    <style>
+        #box {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box"></div>
+
+<script>
+    let box = document.getElementById("box");
+    let x = 100;
+    let y = 100;
+
+    document.addEventListener("keydown", function(e) {
+        if(e.key === "ArrowRight") x += 10;
+        if(e.key === "ArrowLeft") x -= 10;
+        if(e.key === "ArrowUp") y -= 10;
+        if(e.key === "ArrowDown") y += 10;
+
+        box.style.left = x + "px";
+        box.style.top = y + "px";
+    });
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    height:2000px; /* scroll ke liye */
+}
+#navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:red;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div id="navbar">Navbar</div>
+
+<script>
+window.addEventListener("scroll", () => {
+    let nav = document.getElementById("navbar");
+
+    if(window.scrollY > 100){
+        nav.style.background = "black";
+    } else {
+        nav.style.background = "red";
+    }
+});
+</script>
+
+</body>
+</html>
