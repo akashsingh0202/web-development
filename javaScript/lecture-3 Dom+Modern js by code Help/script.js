@@ -26,11 +26,22 @@
 
 
 
-let fragment=document.createDocumentFragment();
- for (let i=1;i<=100;i++){
+// let fragment=document.createDocumentFragment();
+//  for (let i=1;i<=100;i++){
  
-    let newElement=document.createElement("p");
-    newElement.textContent="this is para"+i;
-    fragment.appendChild(newElement);
- }
- document.body.appendChild(fragment);
+//     let newElement=document.createElement("p");
+//     newElement.textContent="this is para"+i;
+//     fragment.appendChild(newElement);
+//  }
+//  document.body.appendChild(fragment);
+
+// window.addEventListener("scroll", () => {
+//     console.log("scrolling...");
+// });
+// console.log("1");
+
+// setTimeout(() => {
+//     console.log("2");
+// }, 2000);
+
+// console.log("3");
