@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>akash</h1>
+    <script>
+
+// //Question-1 Write a function called 'greet' that takes a name parameter and logs a greeting message to the console.
+// // Define a function called greet that takes a name parameter
+// function greet(name){
+//   console.log(`hello ${name}! how are you`)
+// }
+// name="akash"
+// greet(name);
+
+
+
+
+//Question-2 Write a function called 'getSquare' that takes a number parameter and returns its square.
+// Define a function called getSquare that takes a number parameter
+// function getSquare(number){
+//   const square=number**2;
+//   return square;
+// }
+// console.log(getSquare(5));
+
+
+
+
+
+// // Question-3 Write a function called 'countLetters' that takes a string parameter and returns an object that contains a count of each letter in the string.
+// function countLetters(str){
+//   const count={};
+//   for(let i=0;i < str.length;i++){
+//     const char=str[i];
+//     if(count[char]){
+//       count[char]++;
+//     }
+//     else{
+//       count[char]=1;
+//     }
+//   }
+//   return count;
+// }
+// // str="akash"
+// console.log(countLetters("akash"));
+
+
+
+
+
+
+//Question-4-Write a function called 'createCounter' that returns a function. The returned function should increment a counter variable each time it is called and return the current count.
+// function createCounter(){
+//   let count=0;
+//   return function() {
+//   count++;
+//   return count;
+//   };
+// }
+
+
+// const counter=createCounter();
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+
+
+
+
+
+//Question-5-Write a function called 'sumEvenNumbers' that takes an array of numbers as a parameter and returns the sum of all even numbers in the array.
+// function sumEvenNumbers(arr){
+//   let sum=0;
+//   for(let i=0;i<arr.length;i++){
+//     if(arr[i]%2==0){
+//       sum=sum+arr[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// const number=[1,2,3,4,5,6,7];
+// console.log(sumEvenNumbers(number));
+
+
+
+//Question-6-Write a function that takes an array of numbers as an argument and returns the sum of all the numbers in the array.
+// function sumArrayNumbers(arr){
+//   let sum=0;
+//   for(let i=0;i<arr.length ; i++){
+//     sum=sum+arr[i];
+//   }
+//     return sum;
+// }
+
+// const number=[20,32,35,56,67];
+// console.log(sumArrayNumbers(number));
+
+
+
+//Question-7-Write a function that takes an array of strings as an argument and returns a new array with only the strings that have a length greater than 5.
+// function filterLongString(arr){
+//   let filteredArr=[];
+//   for(i=0;i<arr.length;i++){
+//     if(arr[i].length>5){
+//       filteredArr.push(arr[i]);
+//     }
+//   }
+//   return filteredArr;
+// }
+// console.log(filterLongString(["apple", "banana", "kiwi", "watermelon", "orange"])); // ['watermelon', 'orange']
+// console.log(filterLongString(["cat", "dog", "elephant", "giraffe"])); // ['elephant', 'giraffe']
+// console.log(filterLongString(["car", "bike", "bus", "train"])); // []
+
+
+
+
+//Question-8-Write a function that takes an object and returns an array of all the keys in the object.
+// function getKeys(obj){
+//   const keys =Object.keys(obj);
+//   return keys;
+// }
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   gender: "male",
+//   city: "New York",
+// };
+
+// console.log(getKeys(person)); 
+
+
+
+//Question-9-Write a function that takes an array of objects and returns an array of all the values of a specified property name.
+// function getPropertyValues(arr,propName){
+//   const value=arr.map((obj)=>obj[propName]);
+//   return value;
+// }
+
+// const people = [
+//   { name: "Pranay", age: 20, gender: "male" , address:123},
+//   { name: "Nidhi", age: 21, gender: "female",address:456 },
+//   { name: "Soumya", age: 21, gender: "male",address:789 },
+// ];
+
+// console.log(getPropertyValues(people, "name")); 
+// console.log(getPropertyValues(people, "age")); 
+// console.log(getPropertyValues(people, "gender")); 
+// console.log(getPropertyValues(people, "address")); 
+
+
+
+
+///question-10-Write a function that takes an array of objects and returns the object with the highest value for a specified property name.
+function getMaxObject(arr, propName) {
+
+  let maxObj = arr[0]; 
+
+  for (let i = 1; i < arr.length; i++) {
+    
+    if (arr[i][propName] > maxObj[propName]) {
+      maxObj = arr[i]; 
+    }
+
+  }
+
+  return maxObj;
+}
+
+
+
+const arr1 = [
+  { name: "apple", price: 1 },
+  { name: "banana", price: 2 },
+  { name: "orange", price: 3 },
+];
+const maxObj1 = getMaxObject(arr1, "price");
+console.log(maxObj1); // { name: 'orange', price: 3 }
+
+// Test case 2
+const arr2 = [
+  { name: "Pranay", age: 20 },
+  { name: "Nidhi", age: 21 },
+  { name: "Soumya", age: 21 },
+];
+const maxObj2 = getMaxObject(arr2, "age");
+console.log(maxObj2); 
+
+    </script>
+</body>
+</html>
